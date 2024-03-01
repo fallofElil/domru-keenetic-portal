@@ -202,7 +202,6 @@ body {
     transition: background-color 0.4s, box-shadow 0.4s;
     color: var(--c-text-white);
 }
-
 .btn:enabled:hover {
     background-color: var(--c-primary-red-lighter);
     box-shadow: 0 4px 8px rgba(117, 142, 161, 0.22),
@@ -217,6 +216,21 @@ body {
         0 2px 12px rgba(117, 142, 161, 0.25) !important;
     color: var(--c-text-white) !important;
 }
+@media (min-width: 768px) {
+    .btn {
+        padding: 12px 17px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
+@media (min-width: 1200) {
+    .btn {
+        padding: 13px 19px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
 
 .btn:disabled {
     opacity: 0.4;
